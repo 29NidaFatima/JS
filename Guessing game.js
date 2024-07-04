@@ -13,11 +13,10 @@ console.log(random);
         break;
     }
     else if(guess<random){
-        guess=prompt("Your guess was too small.please try again")
+        guess=prompt(" HINT:Your guess was too small.please try again")
     }
-    else(guess>random){
-        guess=prompt("Your guess was too large.please try again")
-    }
-
+    else (guess>random){
     
+        guess=prompt(" HINT:Your guess was too large.please try again")
+    }
  }
