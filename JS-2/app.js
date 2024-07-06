@@ -64,8 +64,38 @@
 // printInfo("Afsha" ,26);
 // printInfo("Nida");
 // // ---------------Sum of two numbers using function with arguments
+// function sum(a,b) {
+//     console.log(a+b);
+// }
+// sum(2,3);
+// sum(7,3);
+// // -----------PRACTICE QUESTION------------
+// // create a function that gives us the average of 3 numbers
+// function calculateAverage(p,q,r) {
+//     let average=(p+q+r)/3;
+//     console.log(average);
+// }
+// calculateAverage(2,2,2);
+// //create a function  that prints  the multiplication table of a number
+// function printTableOfNumber(n) {
+
+//     for (let i = 1; i <= 10; i++) {
+  
+//         console.log(n * i);
+//     }
+// }
+// printTableOfNumber(2);
+// // ------Another way
+// function printTable(n) {
+//     for(let i=n; i<n*10; i+=n) {
+//       console.log(i);
+//     }
+ 
+// }
+// printTable(5);
+//return keyword
 function sum(a,b) {
-    console.log(a+b);
+   return a+b;
 }
-sum(2,3);
-sum(7,3);
+sum(2,3); //will not work like this ,we have to store in any variable or console it directlty when defination fn return something
+console.log(sum(2,3));
