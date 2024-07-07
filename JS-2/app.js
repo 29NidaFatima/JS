@@ -150,12 +150,24 @@
 // }
 // console.log(a); // not accessible
 // TYPE-2---->  LEXICAL SCOPE
-function outerFunc() {
-    let x=5;
-    let y=6;
-    function innerFunc() {
-      console.log(x);  //lexical scope
-    }
-    innerFunc();
+// function outerFunc() {
+//     let x=5;
+//     let y=6;
+//     function innerFunc() {
+//       console.log(x);  //lexical scope
+//     }
+//     innerFunc();
+// }
+// outerFunc();
+// -------------PRACTICE QUESTION------
+let greet="hello"; //global scope
+function changeGreet() {
+    let greet="Assamualaikum";
+    console.log(greet); //function scope
+   function innerGreet() {
+    console.log(greet); //lexical scope
+   }
+    innerGreet();
 }
-outerFunc();
+console.log(greet);
+changeGreet();
