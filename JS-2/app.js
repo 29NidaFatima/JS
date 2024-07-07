@@ -159,15 +159,96 @@
 //     innerFunc();
 // }
 // outerFunc();
+
+//FUNCTION EXPRESSIONS
+// let sum= function (a,b) {
+//     return a+b;
+// }
+// console.log(sum(2,3));
+// let hello= function () {
+//     console.log("helooo");
+// }
+// hello();
+//HIGHER ORDER FUNCTION
+
+//Take one or multiple function as argument
+// function multipleGreet(func,count) {
+//     for( let i=1; i<=count; i++){
+//         func();
+//     }
+// }
+// let greet= function(){
+//     console.log("Namaste");  
+// }
+// multipleGreet(greet,5)
+//return a function
+//  let odd=function(n){
+//     console.log(!(n%2==0));
+    
+//  }
+//  let even=function(n){
+//     console.log(n%2==0);
+    
+//  }
+// function oddOrEvenFactory(request) {
+//     if (request=="odd") {
+//         return function(n){
+//             console.log(!(n%2==0));
+            
+//          }  
+   
+//     }
+   
+//     if (request=="even") {
+//         return function(n){
+//             console.log(n%2==0);
+            
+//          }  
+        
+//     } 
+//     else{
+//         console.log("Wrong request");
+//     }
+// }
+// let request="even";
+// console.log(oddOrEvenFactory(request));
+//METHODS
+// const calulator = {
+//     num:15,
+// add: function (a,b) {
+//     return a+b;
+// },
+// sub: function (a,b) {
+//     return a-b;
+// },
+// mul:function (a,b) {
+//     return a*b;
+// },
+
+// };
+//SHORT HAND METHOD
+const calulator1 = {
+    num:15,
+add(a,b) {
+    return a+b;
+},
+sub(a,b) {
+    return a-b;
+},
+mul(a,b) {
+    return a*b;
+},
+
+};
 // -------------PRACTICE QUESTION------
-let greet = "hello"; //global scope
-function changeGreet() {
-    let greet = "Assamualaikum";
-    console.log(greet); //function scope
-    function innerGreet() {
-        console.log(greet); //lexical scope
-    }
-    innerGreet();
-}
-console.log(greet);
-changeGreet();
+// let greet = "hello"; //global scope
+// function changeGreet() {
+//     let greet = "Assamualaikum";
+//     console.log(greet); //function scope
+//     function innerGreet() {
+//         console.log(greet); //lexical scope
+//     }
+//     innerGreet();
+// }
+// console.log(greet);
+// changeGreet();
