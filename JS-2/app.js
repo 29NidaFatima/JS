@@ -93,9 +93,32 @@
  
 // }
 // printTable(5);
-//return keyword
-function sum(a,b) {
-   return a+b;
+// // return keyword
+// function sum(a,b) {
+//     console.log("hey");
+//    return a+b;
+//    console.log("heyy"); //not executed after writing return keyword
+// }
+// sum(2,3); //will not work like this ,we have to store in any variable or console it directlty when defination fn return something
+// console.log(sum(2,3));
+// // ----- string could also be return
+// function isAdult() {
+//     let age=17;
+//     if (age>=18) {
+//       return "Adult";
+//     } else {
+//         return "Not Adult";
+//     }
+//     console.log("bye bye"); // Never be executed
+// }
+// console.log(isAdult());
+//create a fn that returns the sum of numbers from 1 to n
+function getSum(n) {
+    let sum=0;
+    for (let i = 1; i <=n; i++) {
+  sum=sum+i;
+
+    }
+    return sum;
 }
-sum(2,3); //will not work like this ,we have to store in any variable or console it directlty when defination fn return something
-console.log(sum(2,3));
+console.log(getSum(8));
