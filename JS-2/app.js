@@ -80,7 +80,7 @@
 // function printTableOfNumber(n) {
 
 //     for (let i = 1; i <= 10; i++) {
-  
+
 //         console.log(n * i);
 //     }
 // }
@@ -90,7 +90,7 @@
 //     for(let i=n; i<n*10; i+=n) {
 //       console.log(i);
 //     }
- 
+
 // }
 // printTable(5);
 // // return keyword
@@ -128,7 +128,7 @@
 //     let result="";
 //     for (let i = 0; i < str.length; i++) {
 //        result += str[i];
-        
+
 //     }
 //     return result;
 // }
@@ -160,13 +160,13 @@
 // }
 // outerFunc();
 // -------------PRACTICE QUESTION------
-let greet="hello"; //global scope
+let greet = "hello"; //global scope
 function changeGreet() {
-    let greet="Assamualaikum";
+    let greet = "Assamualaikum";
     console.log(greet); //function scope
-   function innerGreet() {
-    console.log(greet); //lexical scope
-   }
+    function innerGreet() {
+        console.log(greet); //lexical scope
+    }
     innerGreet();
 }
 console.log(greet);
