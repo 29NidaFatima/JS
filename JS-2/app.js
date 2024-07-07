@@ -112,13 +112,24 @@
 //     console.log("bye bye"); // Never be executed
 // }
 // console.log(isAdult());
-//create a fn that returns the sum of numbers from 1 to n
-function getSum(n) {
-    let sum=0;
-    for (let i = 1; i <=n; i++) {
-  sum=sum+i;
+// //create a fn that returns the sum of numbers from 1 to n
+// function getSum(n) {
+//     let sum=0;
+//     for (let i = 1; i <=n; i++) {
+//   sum=sum+i;
 
+//     }
+//     return sum;
+// }
+// console.log(getSum(8));
+// //create a fn that returns the concatenation of all strings in array
+let str=["Hi","Hello","Bye","!"];
+function concatenation(str) {
+    let result="";
+    for (let i = 0; i < str.length; i++) {
+       result += str[i];
+        
     }
-    return sum;
+    return result;
 }
-console.log(getSum(8));
+console.log(concatenation(str));
