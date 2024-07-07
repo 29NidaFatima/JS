@@ -123,13 +123,39 @@
 // }
 // console.log(getSum(8));
 // //create a fn that returns the concatenation of all strings in array
-let str=["Hi","Hello","Bye","!"];
-function concatenation(str) {
-    let result="";
-    for (let i = 0; i < str.length; i++) {
-       result += str[i];
+// let str=["Hi","Hello","Bye","!"];
+// function concatenation(str) {
+//     let result="";
+//     for (let i = 0; i < str.length; i++) {
+//        result += str[i];
         
+//     }
+//     return result;
+// }
+// console.log(concatenation(str));
+// SCOPE
+// TYPE-1---->FUNCTION SCOPE
+// let sum=54; //global scope
+// function calSum(a,b) {
+//     let sum=a+b; //function scope
+//     console.log(sum)
+// }
+
+// calSum(3,4);
+// console.log(sum);
+// TYPE-2---->  BLOCK SCOPE
+// {
+//     let a=23;
+//     console.log(a); //block scope
+// }
+// console.log(a); // not accessible
+// TYPE-2---->  LEXICAL SCOPE
+function outerFunc() {
+    let x=5;
+    let y=6;
+    function innerFunc() {
+      console.log(x);  //lexical scope
     }
-    return result;
+    innerFunc();
 }
-console.log(concatenation(str));
+outerFunc();
