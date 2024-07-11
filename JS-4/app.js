@@ -105,18 +105,63 @@
 // })
 // console.log(check);
 // // create a function to find the min number in array
-let nums = [2,4,10,5,9]
-function getMin(nums) {
-    let minnumber= nums.reduce((min,el)=>{
-    if(min<el){
-        return min;
-    }
-    else{
-        return el;
-    }
-    });
-    return minnumber;
+// let nums = [2,4,10,5,9]
+// function getMin(nums) {
+//     let minnumber= nums.reduce((min,el)=>{
+//     if(min<el){
+//         return min;
+//     }
+//     else{
+//         return el;
+//     }
+//     });
+//     return minnumber;
     
       
-}
-console.log(getMin(nums));
+// }
+// console.log(getMin(nums));
+// //Default parameters
+// function sum(a,b=2) { // Here b is default value
+//    return a+b; 
+// }
+// console.log(sum(3));
+// //Spread
+// function spread(str) {
+//     console.log(...str); // string spread by putting three dots in front of string name
+// }
+// spread("Nida");
+// let arr=[1,2,3,3,4,5,6,7,9,9,0]
+// function spreadArrayValues(arr) {
+//     console.log(...arr);//array spread by putting three dots in front of array name
+// }
+
+// spreadArrayValues(arr);
+// -----------------SPREAD WITH ARRAY LITERALS--------------
+// let arr=[1,2,3,4,5,6];
+// console.log(...arr);
+// let newArr=[...arr]; // existing array elements can be used in new arr
+// console.log(newArr);
+// console.log(newArr.push(10));
+// console.log(newArr);
+// let str=("NidaFatima")
+// console.log([...str])
+// let newStr=[...str] //existing string characters can be used in new string
+// console.log(newStr);
+//  // how can we merge two arrays usong spread
+// let odd = [1, 3, 5, 7];
+// let even = [2, 4, 6, 8];
+// let merge = [...even, ...odd];
+// console.log(merge);
+// // -----------------SPREAD WITH OBJECTS LITERALS-----------------
+// const data={
+//     email:"2529nida!7@gmail.com",
+//     password:"abc@123"
+// };
+// console.log(data);
+// const dataCopy={...data, id:123, country:"India"};
+// console.log(dataCopy);
+// let arr=[1,2,3,4,5,6];
+// const obj={...arr}
+// console.log(obj);
+// const obj1={..."NIDAFATIMA"}
+// console.log(obj1);
