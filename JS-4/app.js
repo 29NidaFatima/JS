@@ -143,6 +143,7 @@ let newArr = [...arr]; // existing array elements can be used in new arr
 console.log(newArr);
 console.log(newArr.push(10));
 console.log(newArr);
+// -----------------------------------
 let str = ("NidaFatima")
 console.log([...str])
 let newStr = [...str] //existing string characters can be used in new string
