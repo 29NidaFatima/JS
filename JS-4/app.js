@@ -137,7 +137,7 @@ function spreadArrayValues(arr) {
 
 spreadArrayValues(arr);
 // ----------------- SPREAD WITH ARRAY LITERALS--------------
-    let arr = [1, 2, 3, 4, 5, 6];
+let arr = [1, 2, 3, 4, 5, 6];
 console.log(...arr);
 let newArr = [...arr]; // existing array elements can be used in new arr
 console.log(newArr);
