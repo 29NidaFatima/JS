@@ -1,11 +1,13 @@
 .red {
     color: red;
 }
+
 .blue {
     color: blue;
 }
+
 .sty {
     background-color: pink;
-    border: 3px solid black ;
+    border: 3px solid black;
 
 }

@@ -2,8 +2,10 @@
     background-color: blue;
     color: white;
 }
+
 .design1 {
     color: purple;
-    user-select: none;text-decoration: underline;
+    user-select: none;
+    text-decoration: underline;
 
 }
