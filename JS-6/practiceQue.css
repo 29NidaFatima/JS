@@ -1,0 +1,8 @@
+#scrollable-div {
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+}
