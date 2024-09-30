@@ -8,12 +8,12 @@ function hello() {
 function demo() {
     console.log("calling hello function");
 
-    hello();
+    hello(); //fn call
 
 }
 console.log("calling demo function");
 
-demo();
+demo(); //fn call
 console.log("Done Bye!");
 // Visualizing the Call Stack
 function one() {
