@@ -27,7 +27,7 @@ function three() {
     console.log(ans);
 
 }
-three();
+three();//fn call
 // JS is Single Threaded Language
 let a = 29;
 console.log(a);
