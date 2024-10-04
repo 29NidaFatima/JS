@@ -39,7 +39,7 @@ function getNum(){
  await getNum();
   await getNum();
 }
-// ------------------------------------
+// ---------------- Handling rejection with await --------------------
 let h1 = document.querySelector("h1");
 function changeColor(color, delay) {
     return new Promise((resolve, reject) => {
@@ -50,8 +50,7 @@ if(num>3){
 }
             h1.style.color = color;
             console.log(`color changed to ${color}`);
-            
-            
+
             resolve("color changed")
         }, delay)
     })
